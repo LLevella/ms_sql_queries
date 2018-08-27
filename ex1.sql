@@ -10,7 +10,7 @@ SELECT [model],[speed],[hd],[price]
 FROM [dbo].[pc]
 WHERE [price] < 450
 
-/* åñëè â ÷èñëî ÏÊ âõîäÿò è íîóòáóêè òîãäà íóæíî îáúåäèíåíèå ñ òàáëèöåé laptop */
+/* если в число ПК входят и ноутбуки тогда нужно объединение с таблицей laptop */
 	SELECT [model],[speed],[hd],[price]
 	FROM [dbo].[pc]
 	WHERE [price] < 450
